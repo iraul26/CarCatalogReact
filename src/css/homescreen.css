@@ -1,0 +1,49 @@
+/* Ensure the container fills the entire viewport */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Content area */
+.content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Fullscreen background image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the screen */
+    z-index: -1; /* Places the image behind the text */
+}
+
+/* Centered text */
+.centered-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+}
